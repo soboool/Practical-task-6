@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int x1, y1, x2, y2;
+    double length;
+
+    // Введення координат
+    printf("Введіть координати x1, y1, x2, y2 через пробіл: ");
+    scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
+
+    // Обчислення довжини вектора
+    length = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+
+    // Виведення результату з точністю до 6 знаків після коми
+    printf("Довжина вектора: %.6lf\n", length);
+
+    return 0;
+}
